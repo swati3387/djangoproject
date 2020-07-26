@@ -9,17 +9,15 @@
     <h1><a href="/" >Swati's Blog</a> </h1>
 
 </div>
+{% for post in posts %}
+    <div>
+    <p>Published: {{ post.created_date }}</p>
+    <h2><a href="">{{ post.title }}</a> </h2>
+    <p>{{ post.text }}</p>
+</div>
+{% endfor %}
 
-<div>
-    <p>gdhsjgfjhgfdhj</p>
-    <h2><a href="">My first blog</a> </h2>
-    <p>jhgsgdsgfugfuygsougfdsgf</p>
-</div>
-<div>
-    <p>gdhsjgfjhgfdhj</p>
-    <h2><a href="">My second blog</a> </h2>
-    <p>jhgsgdsgfugfuygsougfdsgf</p>
-</div>
+
 
 </body>
 </html>
